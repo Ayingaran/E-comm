@@ -41,9 +41,7 @@ app.use('/public',express.static(path.join(__dirname,'uploads')));
 app.use('/api', userRoutes);
 app.use('/api', categoryRoutes);
 app.use('/api', productRoutes);
-app.use(cors({
-  origin: ["http://localhost:3000/","http://localhost:4000/"]
-}));
+
 
 
 app.listen(process.env.PORT, () => {
